@@ -15,8 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (emailValue === "") {
       errorMessage.textContent =
         "Whoops! It looks like you forgot to add your email";
+      emailInput.classList.add("e-header__input-error");
     } else if (!isValidEmail(emailValue)) {
       errorMessage.textContent = "Please provide a valid email address";
+      emailInput.classList.add("e-header__input-error");
     } else {
       errorMessage.textContent = "";
       form.submit();
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   emailInput.addEventListener("focus", function () {
+    emailInput.classList.remove("e-header__input-error");
     errorMessage.textContent = "";
     emailInput.value = "";
   });

@@ -114,8 +114,11 @@ body {
   border: 1px solid var(--primary-200);
   box-sizing: border-box;
   min-width: 100%;
-
   text-align: start;
+}
+
+.e-header__input-error {
+  border: 1px solid var(--accent);
 }
 
 .e-header__input::placeholder {
