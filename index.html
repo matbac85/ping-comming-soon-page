@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/73e8518b7e.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="icon"
       type="image/png"
@@ -20,40 +24,46 @@
   </head>
   <body>
     <div class="wrapper">
-    <header class="b-header">
-      <img src="./images/logo.svg" alt="" class="e-header__logo" />
-      <div class="e-header__body">
-        <h1 class="e-header__title">We are launching <strong>soon!</strong></h1>
-        <p class="e-header__subtitle">Subscribe and get notified</p>
-      </div>
-      <div class="e-header__form">
-        <input
-          type="email"
-          name=""
-          id=""
-          class="e-header__input"
-          placeholder="Your email address…"
+      <header class="b-header">
+        <img src="./images/logo.svg" alt="" class="e-header__logo" />
+        <div class="e-header__body">
+          <h1 class="e-header__title">
+            We are launching <strong>soon!</strong>
+          </h1>
+          <p class="e-header__subtitle">Subscribe and get notified</p>
+        </div>
+        <form class="e-header__form" novalidate>
+          <div class="e-header__input-block">
+            <input
+              type="email"
+              name=""
+              id=""
+              class="e-header__input"
+              placeholder="Your email address…"
+            />
+          </div>
+          <input type="submit" value="Notify Me" class="e-header__button" />
+        </form>
+      </header>
+      <main class="b-main">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt=""
+          class="e-main__img"
         />
-        <input type="button" value="Notify Me" class="e-header__button" />
-      </div>
-    </header>
-    <main class="b-main">
-      <img
-        src="./images/illustration-dashboard.png"
-        alt=""
-        class="e-main__img"
-      />
-    </main>
-    <footer class="b-footer">
-      <div class="e-footer__socials">
-        <img src="./images/logo-facebook.svg" alt="facebook" />
-        <img src="./images/logo-twitter.svg" alt="twitter" />
-        <img src="./images/logo-instagram.svg" alt="instagram" />
-      </div>
-      <p class="e-footer__copyright">
-        &copy; Copyright Ping. All rights reserved.
-      </p>
-    </footer>
-  </div>
+      </main>
+      <footer class="b-footer">
+        <div class="e-footer__socials">
+          <i class="fa-brands fa-facebook-f e-footer__social"></i>
+          <i class="fa-brands fa-twitter e-footer__social"></i>
+          <i class="fa-brands fa-instagram e-footer__social"></i>
+        </div>
+        <p class="e-footer__copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./main.js"></script>
   </body>
 </html>
